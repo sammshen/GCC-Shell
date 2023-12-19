@@ -1,4 +1,4 @@
-link/compile: gcc -o sh shell.c hashmap.c     
+link/compile: gcc/clang -o sh shell.c hashmap.c     
 
 A simple shell with two modes:   
   1) Interactive Mode: REPL  (./sh)
@@ -13,7 +13,8 @@ Learnings from this project:
 - Custom Data Structures in C  
 - execvp, waitpid, fork()    
 - specifically, the implementation of ls: not a syscall, need to create a child and run execvp("ls", args)    
-- implementation of redir  
+- implementation of redir
+- Cleaning up after myself and using -fsanitize=address flag and freeing properly
 
   TODO
  
