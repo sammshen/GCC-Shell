@@ -1,4 +1,5 @@
-link/compile: gcc -o sh shell.c hashmap.c  
+link/compile: gcc -o sh shell.c hashmap.c     
+
 A simple shell with two modes:   
   1) Interactive Mode: REPL  (./sh)
   2) Batch Mode: Scripts (./sh file)
