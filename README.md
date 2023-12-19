@@ -12,7 +12,7 @@ Design Features
 Learnings from this project:  
 - Custom Data Structures in C  
 - execvp, waitpid, fork()    
-- specifically, the implementation of ls  
+- specifically, the implementation of ls: not a syscall, need to create a child and run execvp("ls", args)    
 - implementation of redir  
 
   TODO
