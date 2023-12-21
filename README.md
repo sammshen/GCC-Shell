@@ -15,6 +15,7 @@ Learnings from this project:
 - specifically, the implementation of ls: not a syscall, need to create a child and run execvp("ls", args)    
 - implementation of redir
 - Cleaning up after myself and using -fsanitize=address flag and freeing properly
+- Issue: Using strtok on two different strings
 
   TODO
  
