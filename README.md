@@ -37,7 +37,7 @@ Takeaways from this project:
     - add O_APPEND to the open syscall for advanced redirection, use O_CREAT to create files that don't exist yet
     - e.g. open(filename, flags, 0644);
         - 0 means octal, remaining three digits are in octal permission notation for owner, group, and other
-    - Procedure for redirection:
+    - Procedure for redirection:    
         -save the STDOUT_FILENO file descriptor ID as a temporary integer
         - use dup2 to change STDOUT_FILENO to the desired fd
         - change STDOUT_FILENO back to standard out file descriptor via dup2 again
